@@ -71,6 +71,7 @@ build CMakeFiles/opengl_example.dir/glad.c.o: C_COMPILER__opengl_example_Debug /
 
 build opengl_example: CXX_EXECUTABLE_LINKER__opengl_example_Debug CMakeFiles/opengl_example.dir/main.cpp.o CMakeFiles/opengl_example.dir/glad.c.o
   FLAGS = -g
+  LINK_LIBRARIES = -lglfw
   OBJECT_DIR = CMakeFiles/opengl_example.dir
   POST_BUILD = :
   PRE_LINK = :
