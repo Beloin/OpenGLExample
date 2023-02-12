@@ -47,14 +47,20 @@ int main() {
         glEnableVertexAttribArray(0);
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, nullptr);
 
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawArrays(GL_POLYGON, 0, 3);
 
         GLsizeiptr i2 = sizeof(t2) * (sizeof(t2) / sizeof(t2[0]));
         glBufferData(GL_ARRAY_BUFFER, i2, &t2[0], GL_STATIC_DRAW);
         glEnableVertexAttribArray(0);
         glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, nullptr);
 
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawArrays(GL_TRIANGLES, 0, 3); // Or GL_POLYGON
+
+        // To draw freely
+        // glColor3d(0,0,0);
+        // glBegin(GL_POLYGON);
+        // glVertex2d(...); ...
+        // glEnd();
 
         glfwSwapBuffers(window);
         glfwPollEvents();
