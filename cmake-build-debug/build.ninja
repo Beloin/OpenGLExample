@@ -67,6 +67,12 @@ build CMakeFiles/opengl_example.dir/implementation.cpp.o: CXX_COMPILER__opengl_e
   OBJECT_DIR = CMakeFiles/opengl_example.dir
   OBJECT_FILE_DIR = CMakeFiles/opengl_example.dir
 
+build CMakeFiles/opengl_example.dir/bitscreen.cpp.o: CXX_COMPILER__opengl_example_Debug /home/beloin/Documents/hardware/opengl_example/bitscreen.cpp || cmake_object_order_depends_target_opengl_example
+  DEP_FILE = CMakeFiles/opengl_example.dir/bitscreen.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/opengl_example.dir
+  OBJECT_FILE_DIR = CMakeFiles/opengl_example.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target opengl_example
@@ -75,7 +81,7 @@ build CMakeFiles/opengl_example.dir/implementation.cpp.o: CXX_COMPILER__opengl_e
 #############################################
 # Link the executable opengl_example
 
-build opengl_example: CXX_EXECUTABLE_LINKER__opengl_example_Debug CMakeFiles/opengl_example.dir/main.cpp.o CMakeFiles/opengl_example.dir/glad.c.o CMakeFiles/opengl_example.dir/implementation.cpp.o
+build opengl_example: CXX_EXECUTABLE_LINKER__opengl_example_Debug CMakeFiles/opengl_example.dir/main.cpp.o CMakeFiles/opengl_example.dir/glad.c.o CMakeFiles/opengl_example.dir/implementation.cpp.o CMakeFiles/opengl_example.dir/bitscreen.cpp.o
   FLAGS = -g
   LINK_LIBRARIES = -lGL  -ldl  -lglfw
   OBJECT_DIR = CMakeFiles/opengl_example.dir

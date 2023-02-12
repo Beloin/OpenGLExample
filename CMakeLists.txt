@@ -10,7 +10,7 @@ add_executable(
         glad.c
         implementation.cpp
         implementation.h
-)
+        bitscreen.cpp bitscreen.h)
 
 target_link_libraries(opengl_example GL dl glfw)
 
