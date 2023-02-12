@@ -3,11 +3,14 @@ project(opengl_example)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(opengl_example
+add_executable(
+        opengl_example
         main.cpp
         #        KHR/khrplatform.h
         glad.c
-        )
+        implementation.cpp
+        implementation.h
+)
 
-target_link_libraries(opengl_example glfw)
+target_link_libraries(opengl_example GL dl glfw)
 

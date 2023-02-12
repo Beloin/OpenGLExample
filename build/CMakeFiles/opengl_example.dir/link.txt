@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/opengl_example.dir/main.cpp.o CMakeFiles/opengl_example.dir/glad.c.o -o opengl_example  -lglfw 
+/usr/bin/c++ CMakeFiles/opengl_example.dir/main.cpp.o CMakeFiles/opengl_example.dir/glad.c.o CMakeFiles/opengl_example.dir/implementation.cpp.o -o opengl_example  -lGL -ldl -lglfw 

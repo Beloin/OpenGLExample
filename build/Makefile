@@ -153,6 +153,30 @@ glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_example.dir/build.make CMakeFiles/opengl_example.dir/glad.c.s
 .PHONY : glad.c.s
 
+implementation.o: implementation.cpp.o
+.PHONY : implementation.o
+
+# target to build an object file
+implementation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_example.dir/build.make CMakeFiles/opengl_example.dir/implementation.cpp.o
+.PHONY : implementation.cpp.o
+
+implementation.i: implementation.cpp.i
+.PHONY : implementation.i
+
+# target to preprocess a source file
+implementation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_example.dir/build.make CMakeFiles/opengl_example.dir/implementation.cpp.i
+.PHONY : implementation.cpp.i
+
+implementation.s: implementation.cpp.s
+.PHONY : implementation.s
+
+# target to generate assembly for a file
+implementation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opengl_example.dir/build.make CMakeFiles/opengl_example.dir/implementation.cpp.s
+.PHONY : implementation.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"
+	@echo "... implementation.o"
+	@echo "... implementation.i"
+	@echo "... implementation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
