@@ -104,7 +104,8 @@ int main() {
 
 
 //        updateScreen(screen);
-        // TODO: https://stackoverflow.com/questions/40060212/rendering-a-bit-array-with-opengl
+        // TODO read: https://stackoverflow.com/questions/40060212/rendering-a-bit-array-with-opengl if does not work:
+        //  watch: https://www.youtube.com/watch?v=45MIykWJ-C4&ab_channel=freeCodeCamp.org
         updateScreen2(screen, buffer);
         for (int j = 0; j < 64 * 32; ++j) {
             float *bff = buffer[j];
